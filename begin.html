@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/script.css" />
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <h1 class="title">Light and Sound Memory Game</h1>
+
+    <p>Welcome to the game! Repeat back the pattern by pressing buttons.</p>
+    <section> 
+      <div id="strikes">
+      Strikes: <span>3</span></div>
+      <div id="time" class ="hidden">
+      Time: <span>20</span>
+    </div>
+    </section>
+
+    <button id="startBtn" onclick="startGame()">Start</button>
+    <button class="hidden" id="stopBtn" onclick="stopGame()">Stop</button>
+    
+    <div id="gameButtonArea">
+      <button id="button1" onclick="guess(1)" onmousedown="startTone(1)" onmouseup="stopTone()"></button>
+      <button id="button2" onclick="guess(2)" onmousedown="startTone(2)" onmouseup="stopTone()"></button>
+      <button id="button3" onclick="guess(3)" onmousedown="startTone(3)" onmouseup="stopTone()"></button>
+      <button id="button4" onclick="guess(4)" onmousedown="startTone(4)" onmouseup="stopTone()"></button>
+      <button id="button5" onclick="guess(5)" onmousedown="startTone(5)" onmouseup="stopTone()"></button>
+      <button id="button6" onclick="guess(6)" onmousedown="startTone(6)" onmouseup="stopTone()"></button>
+    </div>
+  </body>
+  <nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="begin.html">Start the Game</a></li>
+        <li><a href="howto.html">How to Play</a></li>
+      </ul>
+  </nav>
+</html>
