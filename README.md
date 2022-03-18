@@ -6,7 +6,7 @@ Submitted by: Fahad Ali
 
 Time spent: 15 hours spent in total
 
-Link to project: (insert your link here, should start with https://glitch.com...)
+Link to project: https://www.loom.com/share/cd724383381a4a0eafc17eba4e4c46b4
 
 ## Required Functionality
 
