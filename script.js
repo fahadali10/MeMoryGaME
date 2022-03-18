@@ -94,9 +94,8 @@ function playClueSequence(){
   document.querySelector("#time > span").style.color = "green";
   clearInterval(Timer)
   guessCounter = 0;
-  clueHoldTime = clueHoldTime - (30 * progress);
+  clueHoldTime = clueHoldTime - (20 * progress);
   let tempClueHoldTime = clueHoldTime;
-  let countime = tempClueHoldTime;
   let delay = nextClueWaitTime; 
   for(let i=0;i<=progress;i++){ 
     console.log("play single clue: " + result[i] + " in " + delay + "ms")
@@ -104,11 +103,11 @@ function playClueSequence(){
     delay += clueHoldTime 
     delay += cluePauseTime;
     if(progress <=2){
-      clueHoldTime = clueHoldTime - 35;
+      clueHoldTime = clueHoldTime - 25;
     }else if(progress <=5){
-      clueHoldTime = clueHoldTime - 40;
+      clueHoldTime = clueHoldTime - 30;
     }else {
-      clueHoldTime = clueHoldTime - 50;
+      clueHoldTime = clueHoldTime - 40;
     }
   }
   clearInterval(Timer)

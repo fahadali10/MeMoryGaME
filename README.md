@@ -71,7 +71,7 @@ http://g.recordit.co/ixeJinKCLh.gif
 
 ## Interview Recording URL Link
 
-[My 5-minute Interview Recording](your-link-here)
+[My 5-minute Interview Recording] https://www.loom.com/share/cd724383381a4a0eafc17eba4e4c46b4
 
 ## License
 
