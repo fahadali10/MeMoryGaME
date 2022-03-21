@@ -25,7 +25,7 @@ function removeaddButtons(){
 }
 
 function startGame(){
-  clearInterval(Timer);
+  clearInterval(startTimer);
   progress = 0;
   gamePlaying = true;
   random();
@@ -120,6 +120,7 @@ function playClueSequence(){
 
 function loseGame(){
   stopTone();
+  clearInterval(startTimer);
   setTimeout(function() {
     stopGame();
     document.querySelector("#time > span").innerHTML = 20;
@@ -130,6 +131,7 @@ function loseGame(){
 function winGame(){
   stopGame();
   alert("Game Over. You won!."); 
+  clearInterval(startTimer);
 }
 
 function guess(btn){
